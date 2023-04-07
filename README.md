@@ -23,10 +23,11 @@ _A javascript focused project showcasing skills learned up to week 4. This appli
 * _Navigate to project root folder_
 * _Locate and open index.html file in your browswer_
 
-## Known Bugs
+## Known Bugs as of 4/7/23
 
-* 
-* 
+* _Application is not fully functional and requires more TDD_
+* _Does not display user selections in browser_
+* _Does not calculate total cost when selections are made_
 
 ## TDD
 
