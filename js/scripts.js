@@ -3,31 +3,31 @@
 function Pie(toppings, size, cost) {
   this.toppings = toppings;
   this.size = size;
-  this.cost = 0;
+  this.cost = cost;
 }
 
-
-
 Pie.prototype.cost = function() { 
+  let cost = 0;
   if (this.size === "Small") {
-    cost += 10;
+    this.cost += 10;
   } else if (this.size == "Large") {
-    cost += 15;
+    this.cost += 15;
   }
   return cost;
 };
 
 Pie.prototype.toppingsCost = function (){
+  let cost = 0;
   if (this.toppings.includes("Ricotta")) {
-    cost += 5;
+    this.cost += 5;
   } else if (this.toppings.includes("Sausage")) {
-    cost += 8;
+    this.cost += 8;
   } 
-  return toppings.Cost;
+  return cost;
 };
 
 Pie.prototype.Pie = function() {
-  return this.topping + " " + this.size;
+  return this.toppings + " " + this.size;
 };
 
 
@@ -36,7 +36,7 @@ Pie.prototype.Pie = function() {
 function handleFormSubmission(event) {
   event.preventDefault();
 
-  let newPie= new Pie(topping, size);
+  
 }
 
 window.addEventListener("load", function() {
