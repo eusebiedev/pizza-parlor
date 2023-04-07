@@ -6,25 +6,19 @@ function Pie(toppings, size) {
   this.cost = 0;
 }
 
+
+Pie.prototype.cost = function() {
+  let cost =0;
+  if (this.size === "Small" && this.toppings === "Ricotta") {
+    cost += 10;
+  } else if (this.size === "Large") {
+    cost += 20;
+  } 
+    return this.cost += cost;
+};
+
 Pie.prototype.Pie = function() {
   return this.topping + " " + this.size;
-};
-
-Pie.prototype.sizeCost = function() {
-  if (this.size === "Small") {
-    this.cost === 10;
-  } else if (this.size === "Large") {
-    this.cost === 20;
-  } else
-  return this.cost;
-};
-
-Pie.prototype.toppingsCost = function() {
-  if (this.toppings === "Ricotta") {
-    this.cost += 3;
-  } else if (this.toppings === "Sausage") {
-    this.cost +=5;
-  }
 };
 
 
