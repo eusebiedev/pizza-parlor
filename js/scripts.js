@@ -1,21 +1,27 @@
 // Business Logic
 
-function Pie(toppings, size) {
-  this.toppings = toppings;
+function Pie(size, toppings) {
   this.size = size;
+  this.toppings = toppings;
   this.cost = 0;
 }
 
 
 Pie.prototype.cost = function() {
-  let cost =0;
-  if (this.size === "Small" && this.toppings === "Ricotta") {
-    cost += 10;
+
+  if (this.size === "Small") {
+    this.cost += 10;
   } else if (this.size === "Large") {
-    cost += 20;
-  } 
-    return this.cost += cost;
+    this.cost += 20;
+  } else if (this.toppings.indexOf("Ricotta") >= 0) {
+    this.cost += 5;
+  } else if (this.toppings.indexOf("Sausage") >=0) {
+    this.cost += 8; 
+  }
+  return this.cost;
 };
+
+
 
 Pie.prototype.Pie = function() {
   return this.topping + " " + this.size;
