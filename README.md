@@ -37,6 +37,9 @@ Test: "It should return a pizza object with 2 properties for toppings, and 1 pro
 Code: let myPie = new Pie(["Ricotta","Musrooms"], "small" );
 Expected Output: Pizza {toppings: ["ricotta", "mushrooms"], size:"small"}
 
+Test: It should return the cost of a pie with 1 topping and 1 size"
+Code:
+Expected Output: "
 ```
 ## License
 ### [MIT](https://opensource.org/license/mit/) 
