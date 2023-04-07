@@ -1,24 +1,27 @@
 // Business Logic
 
-function Pie(toppings, size, cost) {
+function Pie(toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  this.cost = cost;
+  this.cost = 0;
 }
+
+Pie.prototype.cost = function() {
+  if (this.size === "Small") {
+    this.cost += 10;
+  }
+  return this.cost;
+};
 
 Pie.prototype.customerPie = function() {
   return this.topping + " " + this.size;
 };
 
-Pie.prototype.cost = function() {
-  let cost = 5;
-  if (this.size === "Small" && this.toppings === "Ricotta") {
-    cost += 10;
-  } else if (this.size === "Small" && this.toppings === "Sausage") {
-    cost += 15;
-  }
-  return cost;
-};
+  // } else if (this.size === "Small" && this.toppings === "Sausage") {
+  //   cost += 5;
+  // } else if (this.size === "Large" && this.toppings === "Ricotta" && this.toppings === "Sausage") {
+  //   cost += 10;
+  // }
 
 
 
@@ -39,19 +42,16 @@ Pie.prototype.cost = function() {
 
 
 
+// // UI Logic
+// function handleFormSubmission(event) {
+//   event.preventDefault();
+
+//   //let newPie= new Pie(topping, size);
+
+// }
 
 
 
-// UI Logic
-function handleFormSubmission(event) {
-  event.preventDefault();
-
-  //let newPie= new Pie(topping, size);
-
-}
-
-
-
-window.addEventListener("load", function() {
-  document.getElementById("pizza-pie").addEventListener("submit", handleFormSubmission);
-});
+// window.addEventListener("load", function() {
+//   document.getElementById("pizza-pie").addEventListener("submit", handleFormSubmission);
+// });
