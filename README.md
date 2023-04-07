@@ -31,7 +31,11 @@ _A javascript focused project showcasing skills learned up to week 4. This appli
 ## TDD
 
 ```
-Describe 
+Describe Pie()
+
+Test: "It should return a pizza object with 2 properties for toppings, and 1 property for size .
+Code: let myPie = new Pie(["Ricotta","Musrooms"], "small" );
+Expected Output: Pizza {toppings: ["ricotta", "mushrooms"], size:"small"}
 
 ```
 ## License
