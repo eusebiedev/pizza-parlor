@@ -40,6 +40,10 @@ Expected Output: Pizza {toppings: ["Ricotta", "Mushrooms"], size: "Small"}
 Test: It should return the cost of a pie with 1 topping and 1 size"
 Code: let myPie = new Pie(["Ricotta"], "Small");
 Expected Output: Pie {toppings: ["Ricotta"], size: "Small", cost: 10}
+
+Test: "It should return the cost of small pie with 1 topping"
+Code = let myPie = newPie(["Ricotta"], "Small");
+Expected Output: "Pie {toppings: ["Ricotta"], size: "Small", cost 13}
 ```
 ## License
 ### [MIT](https://opensource.org/license/mit/) 
