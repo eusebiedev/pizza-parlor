@@ -37,29 +37,38 @@ Describe Pie()
 Test: "It should return a pizza object with 2 properties for toppings, and 1 property for size .
 Code: let myPie = new Pie(["Ricotta","Musrooms"], "Small" );
 myPie;
-Expected Output: Pizza {toppings: ["Ricotta", "Mushrooms"], size: "Small"}
+Expected Output: Pie {toppings: ["Ricotta", "Mushrooms"], size: "Small"}
 
 Test: "it should initiate pizza objects default cost on object creation"
 Code: let myPie = new Pie("","");
 myPie;
 Expected Output: Pie {toppings: '', size: '', cost: 0}
 
-Describe fullCost()
+Describe sizeCost()
 
 Test: "It should increase the price by $10 if user selects small with no toppings"
 Code: let myPie = new Pie ([""], "Small"); 
-myPie.fullCost();
+myPie. sizeCost();
 Expected Output: 10;
 
 Test: "It should increase the price by $15 if user selects large with no toppings"
 Code: let myPie = new Pie ([""], "Large"); 
-myPie.fullCost();
+myPie.sizeCost();
 Expected Output: 15;
 
 Test: "It should return a price of $100 if no size is selected"
 Code: let myPie = new Pie ("", "");
-myPie.fullCost();
+myPie.sizeCost();
 Expected Output: 100;
+
+Describe toppingsCost()
+
+Test: "It should increase price to $13 if user select small pie with 1 ricotta topping"
+Code: let myPie = new Pie(["Ricotta"], "Small");
+Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 13}
+myPie.toppingsCost();
+13;
+
 
 
 
