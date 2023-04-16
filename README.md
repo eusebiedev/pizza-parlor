@@ -67,8 +67,11 @@ Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 13}
 myPie.fullCost();
 13;
 
-
-
+Test: "It should increase price to 14 if user selects small pie with 1 sausage topping"
+Code: let myPie = new Pie(["Sausage"], "Small");
+Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 14}
+myPie.fullCost();
+14;
 
 ```
 ## License
