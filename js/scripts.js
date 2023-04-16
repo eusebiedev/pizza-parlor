@@ -9,12 +9,12 @@ function Pie(toppings, size) {
 Pie.prototype.fullCost = function() { 
   if (this.size === "Small") {
     this.cost += 10;
-  // } else if (this.size == "Large") {
-  //   this.cost += 15;
-  // }
-  return this.cost;
+  } else if (this.size == "Large") {
+    this.cost += 15;
   }
+  return this.cost;
 }
+
 // Pie.prototype.toppingsCost = function () {
 //   if (this.toppings.includes("Ricotta")) {
 //     this.cost += 5;
