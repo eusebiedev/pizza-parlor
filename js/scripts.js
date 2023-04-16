@@ -9,12 +9,16 @@ function Pie(toppings, size) {
 Pie.prototype.fullCost = function() { 
   if (this.size === "Small") {
     this.cost += 10;
-  } else if (this.size == "Large") {
+  } else if (this.size === "Large") {
     this.cost += 15;
   } if (this.size === "Small" && this.toppings == "Ricotta") {
     this.cost += 3;
-  } else if (this.size == "Small" && this.toppings == "Sausage") {
+  } else if (this.size === "Small" && this.toppings == "Sausage") {
     this.cost += 4;
+  } else if (this.size === "Large" && this.toppings == "Ricotta") {
+    this.cost += 3;
+  // } else if (this.size === "Large" && this.toppings == "Sausage") {
+  //   this.cost += 3;
   } else {
     this.cost += 100;
   }
