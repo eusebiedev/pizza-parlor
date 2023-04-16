@@ -48,8 +48,13 @@ Describe fullCost()
 
 Test: "It should increase the price by $10 if user selects small"
 Code: let myPie = new Pie ([""], "Small"); 
-Expected Output: Pie {toppings: '', size: 'Small', cost: 10}
+myPie.fullCost();
+10;
 
+Test: "It should increase the price by $15 if user selects large"
+Code: let myPie = new Pie ([""], "Large"); 
+myPie.fullCost();
+15;
 
 
 
