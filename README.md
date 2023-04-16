@@ -44,6 +44,12 @@ Code: let myPie = new Pie("","");
 myPie;
 Expected Output: Pie {toppings: '', size: '', cost: 0}
 
+Describe fullCost()
+
+Test: "It should increase the price by $10 if user selects small"
+Code: let myPie = new Pie ([""], "Small"); 
+Expected Output: Pie {toppings: '', size: 'Small', cost: 10}
+
 
 
 
