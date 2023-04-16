@@ -11,6 +11,8 @@ Pie.prototype.fullCost = function() {
     this.cost += 10;
   } else if (this.size == "Large") {
     this.cost += 15;
+  } else {
+    return 100;
   }
   return this.cost;
 }
@@ -32,6 +34,7 @@ Pie.prototype.pie = function() {
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
+  const myPie = new Pie(this.toppings, this.size);
 
   
 }
