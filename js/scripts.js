@@ -17,8 +17,8 @@ Pie.prototype.fullCost = function() {
     this.cost += 4;
   } else if (this.size === "Large" && this.toppings == "Ricotta") {
     this.cost += 3;
-  // } else if (this.size === "Large" && this.toppings == "Sausage") {
-  //   this.cost += 3;
+  } else if (this.size === "Large" && this.toppings == "Sausage") {
+    this.cost += 4;
   } else {
     this.cost += 100;
   }
