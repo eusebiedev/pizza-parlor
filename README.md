@@ -36,15 +36,17 @@ Describe Pie()
 
 Test: "It should return a pizza object with 2 properties for toppings, and 1 property for size .
 Code: let myPie = new Pie(["Ricotta","Musrooms"], "Small" );
+myPie;
 Expected Output: Pizza {toppings: ["Ricotta", "Mushrooms"], size: "Small"}
 
-Test: It should return the cost of a pie with 1 topping and 1 size"
-Code: let myPie = new Pie(["Ricotta"], "Small");
-Expected Output: Pie {toppings: ["Ricotta"], size: "Small", cost: 10}
+Test: "it should initiate pizza objects default cost on object creation"
+Code: let myPie = new Pie("","");
+myPie;
+Expected Output: Pie {toppings: '', size: '', cost: 0}
 
-Test: "It should return the cost of small pie with 1 topping"
-Code = let myPie = newPie(["Ricotta"], "Small");
-Expected Output: "Pie {toppings: ["Ricotta"], size: "Small", cost 13}
+
+
+
 ```
 ## License
 ### [MIT](https://opensource.org/license/mit/) 
