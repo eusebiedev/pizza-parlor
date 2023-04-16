@@ -44,29 +44,27 @@ Code: let myPie = new Pie("","");
 myPie;
 Expected Output: Pie {toppings: '', size: '', cost: 0}
 
-Describe sizeCost()
+Describe fullCost()
 
 Test: "It should increase the price by $10 if user selects small with no toppings"
 Code: let myPie = new Pie ([""], "Small"); 
-myPie. sizeCost();
+myPie. fullCost();
 Expected Output: 10;
 
 Test: "It should increase the price by $15 if user selects large with no toppings"
 Code: let myPie = new Pie ([""], "Large"); 
-myPie.sizeCost();
+myPie.fullCost();
 Expected Output: 15;
 
 Test: "It should return a price of $100 if no size is selected"
 Code: let myPie = new Pie ("", "");
-myPie.sizeCost();
+myPie.fullCost();
 Expected Output: 100;
-
-Describe toppingsCost()
 
 Test: "It should increase price to $13 if user select small pie with 1 ricotta topping"
 Code: let myPie = new Pie(["Ricotta"], "Small");
 Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 13}
-myPie.toppingsCost();
+myPie.fullCost();
 13;
 
 
