@@ -67,17 +67,23 @@ Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 13}
 myPie.fullCost();
 13;
 
-Test: "It should increase price to 14 if user selects small pie with 1 sausage topping"
+Test: "It should increase price to $14 if user selects small pie with 1 sausage topping"
 Code: let myPie = new Pie(["Sausage"], "Small");
-Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 14}
+Expected Output: {toppings: ["Sausage"], size: "Small", cost: 14}
 myPie.fullCost();
 14;
 
-Test: "It should increase price to 18 if user selects large pie with 1 ricotta topping"
-Code: let myPie = new Pie(["Sausage"], "Large");
-Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 14}
+Test: "It should increase price to $18 if user selects large pie with 1 ricotta topping"
+Code: let myPie = new Pie(["Ricotta"], "Large");
+Expected Output: {toppings: ["Ricotta"], size: "Small", cost: 18}
 myPie.fullCost();
 18;
+
+Test: "It should increase price to $19 if user selects large pie with 1 sausge topping"
+Code: let myPie = new Pie(["Sausage"], "Large");
+Expected Output: {toppings: ["Sausage"], size: "Small", cost: 19}
+myPie.fullCost();
+19;
 
 
 
