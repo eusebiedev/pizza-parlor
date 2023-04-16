@@ -13,20 +13,14 @@ Pie.prototype.fullCost = function() {
     this.cost += 15;
   } if (this.size === "Small" && this.toppings == "Ricotta") {
     this.cost += 3;
+  } else if (this.size == "Small" && this.toppings == "Sausage") {
+    this.cost += 4;
   } else {
     this.cost += 100;
   }
   return this.cost;
 };
-// Pie.prototype.toppingsCost = function () {
-//   if (this.toppings.includes("Ricotta")) {
-//     this.cost += 3;
-//   // } else if (this.toppings.includes("Sausage")) {
-//   //   this.cost += 8;
-//   // } 
-//   return this.cost;
-//   }
-// }
+
 
 Pie.prototype.selectedPie = function() {
   return this.toppings + " " + this.size;
