@@ -11,22 +11,24 @@ Pie.prototype.fullCost = function() {
     this.cost += 10;
   } else if (this.size == "Large") {
     this.cost += 15;
+  } if (this.size === "Small" && this.toppings == "Ricotta") {
+    this.cost += 3;
   } else {
-    return 100;
+    this.cost += 100;
   }
   return this.cost;
-}
-
+};
 // Pie.prototype.toppingsCost = function () {
 //   if (this.toppings.includes("Ricotta")) {
-//     this.cost += 5;
-//   } else if (this.toppings.includes("Sausage")) {
-//     this.cost += 8;
-//   } 
+//     this.cost += 3;
+//   // } else if (this.toppings.includes("Sausage")) {
+//   //   this.cost += 8;
+//   // } 
 //   return this.cost;
-// };
+//   }
+// }
 
-Pie.prototype.pie = function() {
+Pie.prototype.selectedPie = function() {
   return this.toppings + " " + this.size;
 };
 
@@ -34,11 +36,18 @@ Pie.prototype.pie = function() {
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  const myPie = new Pie(this.toppings, this.size);
-
+  const selectSize = document.querySelector("select#size").value;
+  const selectTopping = document.querySelectorAll("input[name='toppings']:checked");
+  let myPie = new Pie(selectSize, selectTopping);
   
+  document.getElementById("pizza-pie").reset();
+  document.querySelector("p#output").innerText = myPie + result;
+  console.log('result');
+  document.querySelector("p#output").removeAttribute("class");
+
 }
 
 window.addEventListener("load", function() {
   document.getElementById("pizza-pie").addEventListener("submit", handleFormSubmission);
+
 });
