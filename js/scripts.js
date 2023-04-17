@@ -11,25 +11,26 @@ Pie.prototype.fullCost = function() {
     this.cost += 10;
   } else if (this.size === "Large") {
     this.cost += 15;
-  } if (this.size === "Small" && this.toppings === "Ricotta") {
+  } if (this.size === "Small" && this.toppings == "Ricotta") {
     this.cost += 3;
-  } else if (this.size === "Small" && this.toppings === "Sausage") {
+  } else if (this.size === "Small" && this.toppings == "Sausage") {
     this.cost += 4;
-  } else if (this.size === "Large" && this.toppings === "Ricotta") {
+  } else if (this.size === "Large" && this.toppings == "Ricotta") {
     this.cost += 3;
-  } else if (this.size === "Large" && this.toppings === "Sausage") {
+  } else if (this.size === "Large" && this.toppings == "Sausage") {
     this.cost += 4;
   } else {
     this.cost = 100;
   }
-  return this.cost + this.toppings;
+  return this.cost;
   
 };
 
-Pie.prototype.pie = function() {
-  this.cost = this.size  + this.toppings;
-
+Pie.prototype.selectedPie = function() {
+  this.cost = this.toppings  + this.size;
 };
+
+
 
 
 
