@@ -85,6 +85,12 @@ Expected Output: {toppings: ["Sausage"], size: "Small", cost: 19}
 myPie.fullCost();
 19;
 
+Describe fullPie()
+
+Test: "It should return the combined size of pie + toppings selected"
+Code: let myPie = new Pie(["Sausage"], "Large");
+Expected Output:  {toppings: ["Sausage"], size: 'Large', cost: 0}
+fullpie();
 
 
 ```
