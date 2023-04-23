@@ -6,7 +6,6 @@ body {
 
 }
 
-
 .container {
   margin: auto;
   width: 100%;
@@ -16,4 +15,8 @@ body {
 
 .hidden {
   display: none;
+}
+
+em {
+  font-size:small;
 }
