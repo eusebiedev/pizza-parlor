@@ -23,25 +23,28 @@
           <div class="col p-1">
             <label for="size">
               <h5>Sizes:</h5>
-            </label>
-            <select id="size" class="form-select-form-control" required="">
+            </label><br>
+            <select id="size" class="form-select-form-control">
               <option value="">Please-Select-An-Option</option>
-              <option value="Small">Small - $10</option>
-              <option value="Large">Large - $15</option>
+              <option value="Small">Small - $10 (w/no toppings)</option>
+              <option value="Large">Large - $15 (w/no toppings)</option>
+            </select>
+          </div><br>
+          <div class="col p-1">
+            <label for="toppings">
+              <h5>Toppings: <em>Please select at least one (Default is cheese!)</em></h5>
+            </label><br>
+            <select id="toppings" class="form-select-form-control">
+              <option value="">Please-Select-An-Option</option>
+              <option value="Ricotta">Ricotta + $3</option>
+              <option value="Sausage">Sausage + $4</option>
             </select>
           </div>
-          <div class="col p-1">
-            <h5>Toppings: <em>Please select at least one.</em></h5>
-            <input type="checkbox" class="form-check-input" name="toppings" value="Ricotta">
-            Ricotta + $3
-            <input type="checkbox" class="form-check-input" name="toppings" value="Sausage">
-            Sausage + $4
-          </div>
           <hr>
-          <button type="submit" class="btn btn-success btn-small">Submit</button>
+          <button type="submit" class="btn btn-primary btn-small">Submit</button>
         </form>
         <div>
-          <p id="output" class="hidden"></p>
+        <p id="output" class="hidden"></p>
         </div>
       </div>
     </div>
