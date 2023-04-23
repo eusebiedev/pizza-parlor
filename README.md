@@ -15,7 +15,7 @@
 
 ## Description
 
-_A javascript focused project showcasing skills learned up to week 4. This application invites the customer to build a pizza with up to 2 toppings, choose a size, and the final cost is calculated and displayed on submission._
+_A javascript focused project showcasing skills learned up to week 4 with a focus on Test Driven Development. This application invites the customer to choose either a small or large pizza with no toppings, or select 1 topping per pizza, and the final cost is calculated and displayed on submission._
 
 ## Setup/Installation Requirements
 
@@ -23,13 +23,11 @@ _A javascript focused project showcasing skills learned up to week 4. This appli
 * _Navigate to project root folder_
 * _Locate and open index.html file in your browswer_
 
-## Known Bugs as of 4/7/23
+## Known Bugs as of 4/23/23
 
-* _Application is not fully functional and requires more TDD_
-* _Does not display user selections in browser_
-* _Does not calculate total cost when selections are made_
+* _No known bugs_
 
-## TDD
+### TDD [Test Driven Developement]
 
 ```
 Describe Pie()
@@ -105,4 +103,4 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 If you have any questions, comments, or concerns, please reach out to me at siebenee@gmail.com.
 
-Copyright (c) 04/07/2023 Eusebie Siebenberg
+Copyright (c) 04/23/2023 Eusebie Siebenberg
