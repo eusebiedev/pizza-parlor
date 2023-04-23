@@ -21,7 +21,7 @@ _A javascript focused project showcasing skills learned up to week 4 with a focu
 
 * _Clone Repository_
 * _Navigate to project root folder_
-* _Locate and open index.html file in your browswer_
+* _Locate and open index.html file in your browser to run application_
 
 ## Known Bugs as of 4/23/23
 
@@ -101,6 +101,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-If you have any questions, comments, or concerns, please reach out to me at siebenee@gmail.com.
+If you have any questions, comments, or concerns, please reach out to me at siebenee@gmail.com
 
 Copyright (c) 04/23/2023 Eusebie Siebenberg
