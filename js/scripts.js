@@ -11,42 +11,35 @@ Pie.prototype.fullCost = function() {
     this.cost += 10;
   } else if (this.size === "Large") {
     this.cost += 15;
-  } if (this.size === "Small" && this.toppings == "Ricotta") {
-    this.cost += 3;
-  } else if (this.size === "Small" && this.toppings == "Sausage") {
-    this.cost += 4;
-  } else if (this.size === "Large" && this.toppings == "Ricotta") {
-    this.cost += 3;
-  } else if (this.size === "Large" && this.toppings == "Sausage") {
-    this.cost += 4;
   } else {
-    this.cost = 100;
+    this.cost += 100;
   }
-  return this.cost;
+
+  if (this.toppings === "Ricotta") {
+    this.cost += 3;
+  }
   
+  if (this.toppings === "Sausage") {
+    this.cost += 4;
+  } 
+  return this.cost;
+}
+
+Pie.prototype.fullPie = function() {
+  return "1- " + this.size + " pizza, " + this.toppings + " comes to " + this.fullCost(); 
 };
-
-Pie.prototype.selectedPie = function() {
-  this.cost = this.toppings  + this.size;
-};
-
-
-
-
 
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  const size = document.querySelector("select#size").value;
-  const toppings = document.querySelectorAll("input[name='toppings']:checked");
-  let newPie = new Pie(size, toppings);
-  let output = newPie.fullCost();
+  const size = document.getElementById("size").value;
+  const toppings = document.getElementById("toppings").value;
+  let newPie = new Pie(toppings,size);
   document.getElementById("pizza-pie").reset();
-  document.querySelector("p#output").innerText = "Your Pizza Order: " + " " + output;
+  document.getElementById("output").innerText = "Thanks so much for your order! " + "Here are the details and total cost for today: " + newPie.fullPie() + "$";
   document.querySelector("p#output").removeAttribute("class");
 }
 
 window.addEventListener("load", function() {
   document.getElementById("pizza-pie").addEventListener("submit", handleFormSubmission);
-
 });
