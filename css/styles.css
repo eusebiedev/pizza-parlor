@@ -1,7 +1,11 @@
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  background: #2c3642;
+  color: #fff;
+
 }
+
 
 .container {
   margin: auto;
